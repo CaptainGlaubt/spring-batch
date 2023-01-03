@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/batch
+    username: postgres
+    password: postgres
+    hikari:
+      connection-init-sql: SET TIME ZONE 'UTC'
+  batch:
+    jdbc:
+      initialize-schema: always
